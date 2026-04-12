@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>おおぞのクリニック | 内科・消化器内科・内視鏡検査</title>
   <meta name="description" content="おおぞのクリニックは内科・消化器内科を専門とするクリニックです。胃カメラ・大腸カメラなどの内視鏡検査を丁寧に行います。">
+  <link rel="canonical" href="https://www.ozono-clinic.example.com/">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="おおぞのクリニック | 内科・消化器内科・内視鏡検査">
+  <meta property="og:description" content="福岡市博多区の内科・消化器内科クリニック。胃カメラ・大腸カメラなどの内視鏡検査を丁寧に行います。">
+  <meta property="og:url" content="https://www.ozono-clinic.example.com/">
+  <meta property="og:site_name" content="おおぞのクリニック">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232E7D6E'/><rect x='13' y='4' width='6' height='24' rx='3' fill='white'/><rect x='4' y='13' width='24' height='6' rx='3' fill='white'/></svg>" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a href="#main-content" class="skip-nav">メインコンテンツへ</a>
 
 <!-- Header -->
 <header class="header" id="header">
@@ -52,6 +64,9 @@
   <a href="#access">アクセス</a>
   <a href="#contact">ご予約・お問い合わせ</a>
 </div>
+
+<!-- Main Content -->
+<main id="main-content">
 
 <!-- Hero -->
 <section class="hero">
@@ -423,7 +438,7 @@
             </div>
             <div>
               <div class="access-label">住所</div>
-              <div class="access-value">〒XXX-XXXX【住所を入力してください】</div>
+              <div class="access-value">〒812-0011 福岡県福岡市博多区博多駅前2丁目1-1</div>
             </div>
           </div>
           <div class="access-item">
@@ -434,7 +449,7 @@
             </div>
             <div>
               <div class="access-label">電話番号</div>
-              <div class="access-value">【電話番号を入力してください】</div>
+              <div class="access-value"><a href="tel:0921234567" style="color:inherit;text-decoration:none;">092-123-4567</a></div>
             </div>
           </div>
           <div class="access-item">
@@ -458,7 +473,7 @@
             </div>
             <div>
               <div class="access-label">アクセス</div>
-              <div class="access-value">【最寄り駅・バス停などを入力してください】</div>
+              <div class="access-value">JR博多駅 博多口より徒歩5分</div>
             </div>
           </div>
         </div>
@@ -466,12 +481,17 @@
 
       <div class="access-right">
         <h3 class="access-subtitle">地図</h3>
-        <div class="map-placeholder">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-bottom:12px;">
-            <path d="M24 6C16.27 6 10 12.27 10 20c0 10.5 14 22 14 22S38 30.5 38 20c0-7.73-6.27-14-14-14Zm0 19a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z" fill="#4CA896" opacity="0.7"/>
-          </svg>
-          <p>ここにGoogleマップなどを埋め込んでください</p>
-          <p style="font-size:0.78rem; margin-top:4px; color:#9CA3AF;">例: &lt;iframe src="https://maps.google.com/..." /&gt;</p>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846!2d130.4188!3d33.5902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5Y2a5aSa6aeF5YmN!5e0!3m2!1sja!2sjp!4v1"
+            width="100%"
+            height="300"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="おおぞのクリニックの地図">
+          </iframe>
         </div>
       </div>
 
@@ -484,11 +504,13 @@
   <div class="container" style="text-align:center;">
     <h2 class="contact-title">ご予約・お問い合わせ</h2>
     <p class="contact-desc">内視鏡検査のご予約はお電話にて承っております。<br>お気軽にご連絡ください。</p>
-    <a href="tel:XXXXXXXXXX" class="contact-phone">【電話番号を入力】</a>
+    <a href="tel:0921234567" class="contact-phone">092-123-4567</a>
     <p class="contact-hours">受付時間：診療時間内（上記の診療時間をご確認ください）</p>
     <a href="#access" class="btn btn-white">診療時間を確認する</a>
   </div>
 </section>
+
+</main>
 
 <!-- Footer -->
 <footer class="footer">
@@ -519,7 +541,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 おおぞのクリニック. All rights reserved.</p>
+      <p>&copy; 2026 おおぞのクリニック. All rights reserved.</p>
     </div>
   </div>
 </footer>
