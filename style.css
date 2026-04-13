@@ -742,6 +742,76 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   Recruit
+   =========================== */
+.recruit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 640px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--primary-bg);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.recruit-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.recruit-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.recruit-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-bg);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.recruit-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+.recruit-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+}
+
+.recruit-note {
+  font-size: 0.82rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+}
+
+/* ===========================
    Contact Banner
    =========================== */
 .contact-banner {
@@ -862,6 +932,7 @@ img { max-width: 100%; display: block; }
   .services-grid { grid-template-columns: 1fr; }
   .fever-card { padding: 26px 22px; }
   .fever-notice { flex-direction: column; }
+  .recruit-card { flex-direction: column; padding: 24px 20px; }
   .doctor-header { padding: 22px 22px; }
   .doctor-body { padding: 20px 22px; }
 }
