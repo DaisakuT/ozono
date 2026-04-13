@@ -8,13 +8,13 @@
 }
 
 :root {
-  --primary:       #2E7D6E;
-  --primary-dark:  #1E5C50;
-  --primary-light: #4CA896;
-  --primary-bg:    #EDF7F5;
+  --primary:       #2EA7E0;
+  --primary-dark:  #1B7FB8;
+  --primary-light: #5CC4ED;
+  --primary-bg:    #EBF6FC;
   --accent:        #F4A261;
   --accent-dark:   #E07E3C;
-  --dark:          #1A2E29;
+  --dark:          #1A2D3D;
   --text:          #374151;
   --text-gray:     #6B7280;
   --bg:            #F9FAFB;
@@ -248,7 +248,7 @@ img { max-width: 100%; display: block; }
    Hero
    =========================== */
 .hero {
-  background: linear-gradient(135deg, #EAF7F3 0%, #F4FBF9 55%, var(--white) 100%);
+  background: linear-gradient(135deg, #E8F4FC 0%, #F2F9FD 55%, var(--white) 100%);
   padding: 80px 0 68px;
   overflow: hidden;
 }
@@ -348,130 +348,72 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
-   Endoscopy
+   Fever Outpatient
    =========================== */
-.endo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 36px;
-}
-
-.endo-card {
+.fever-card {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.14);
   border-radius: var(--radius-lg);
   padding: 36px;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.endo-tag {
-  display: inline-block;
-  background: var(--primary);
-  color: var(--white);
-  font-size: 0.72rem;
-  font-weight: 500;
-  padding: 4px 13px;
-  border-radius: 50px;
-  margin-bottom: 14px;
-  letter-spacing: 0.03em;
-}
-
-.endo-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 4px;
-}
-
-.endo-sub {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 18px;
-  font-style: italic;
-}
-
-.endo-desc {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.82);
+.fever-desc {
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.85);
   line-height: 1.9;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
-.endo-list {
-  list-style: none;
-}
-.endo-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.8);
-  padding: 7px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.endo-list li:last-child { border-bottom: none; }
-.endo-list li::before {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: var(--primary) url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4l3 3 5-6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/10px no-repeat;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-/* Endoscopy flow */
-.endo-flow {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: var(--radius-lg);
-  padding: 36px;
-}
-
-.flow-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
-  margin-bottom: 28px;
-}
-
-.flow-steps {
+.fever-notice {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 14px;
+  background: rgba(244,162,97,0.1);
+  border: 1px solid rgba(244,162,97,0.3);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
 }
 
-.flow-step { text-align: center; min-width: 90px; }
+.fever-notice-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
-.flow-num {
-  width: 42px;
-  height: 42px;
-  background: var(--primary);
-  color: var(--white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
+.fever-notice-title {
   font-size: 0.95rem;
-  margin: 0 auto 10px;
+  font-weight: 700;
+  color: #F4A261;
+  margin-bottom: 6px;
 }
 
-.flow-label {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.5;
+.fever-notice-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.8;
+}
+.fever-notice-text strong {
+  color: #F4A261;
 }
 
-.flow-arrow {
-  color: rgba(255,255,255,0.35);
-  font-size: 1.2rem;
-  margin-top: 10px;
-  padding: 0 2px;
-  align-self: flex-start;
-  padding-top: 12px;
+.fever-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background: var(--primary);
+  padding: 14px 32px;
+  border-radius: 50px;
+  transition: background 0.2s, transform 0.15s;
+}
+.fever-tel:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 /* ===========================
@@ -481,6 +423,9 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+}
+.services-grid--4 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .service-item {
@@ -603,6 +548,47 @@ img { max-width: 100%; display: block; }
   line-height: 1.9;
 }
 
+.doctor-detail {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.doctor-detail-section {
+  margin-bottom: 14px;
+}
+.doctor-detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.doctor-detail-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.doctor-detail-list {
+  list-style: none;
+}
+.doctor-detail-list li {
+  font-size: 0.84rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding: 2px 0 2px 14px;
+  position: relative;
+}
+.doctor-detail-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+}
+
 /* ===========================
    Access
    =========================== */
@@ -712,20 +698,142 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
-.map-placeholder {
-  background: var(--primary-bg);
+.map-embed {
   border-radius: var(--radius);
-  border: 1px dashed #9BCCC4;
-  min-height: 300px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+/* ===========================
+   First Visit / Info Cards
+   =========================== */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.info-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-bg);
+  border-radius: 12px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: var(--text-gray);
+  margin-bottom: 16px;
+}
+
+.info-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.info-card-list {
+  list-style: none;
+}
+.info-card-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.88rem;
+  color: var(--text);
+  padding: 6px 0;
+  line-height: 1.6;
+}
+.info-card-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   Recruit
+   =========================== */
+.recruit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 640px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--primary-bg);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.recruit-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.recruit-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 14px;
   line-height: 1.7;
-  padding: 24px;
+}
+
+.recruit-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-bg);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.recruit-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+.recruit-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+}
+
+.recruit-note {
+  font-size: 0.82rem;
+  color: var(--text-gray);
+  line-height: 1.7;
 }
 
 /* ===========================
@@ -835,12 +943,11 @@ img { max-width: 100%; display: block; }
   .hero-visual { display: none; }
   .hero-btns { justify-content: center; }
   .features-grid { grid-template-columns: 1fr; gap: 16px; }
-  .endo-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .doctors-grid { grid-template-columns: 1fr; }
   .access-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .flow-steps { gap: 6px; }
+  .info-cards { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (max-width: 640px) {
@@ -848,10 +955,9 @@ img { max-width: 100%; display: block; }
   .section-light, .section-bg, .section-dark { padding: 64px 0; }
   .contact-banner { padding: 56px 0; }
   .services-grid { grid-template-columns: 1fr; }
-  .flow-arrow { display: none; }
-  .flow-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .endo-card { padding: 26px 22px; }
-  .endo-flow { padding: 26px 22px; }
+  .fever-card { padding: 26px 22px; }
+  .fever-notice { flex-direction: column; }
+  .recruit-card { flex-direction: column; padding: 24px 20px; }
   .doctor-header { padding: 22px 22px; }
   .doctor-body { padding: 20px 22px; }
 }
