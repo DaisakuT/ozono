@@ -548,6 +548,47 @@ img { max-width: 100%; display: block; }
   line-height: 1.9;
 }
 
+.doctor-detail {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.doctor-detail-section {
+  margin-bottom: 14px;
+}
+.doctor-detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.doctor-detail-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.doctor-detail-list {
+  list-style: none;
+}
+.doctor-detail-list li {
+  font-size: 0.84rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding: 2px 0 2px 14px;
+  position: relative;
+}
+.doctor-detail-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+}
+
 /* ===========================
    Access
    =========================== */
