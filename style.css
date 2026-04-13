@@ -348,130 +348,72 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
-   Endoscopy
+   Fever Outpatient
    =========================== */
-.endo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 36px;
-}
-
-.endo-card {
+.fever-card {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.14);
   border-radius: var(--radius-lg);
   padding: 36px;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.endo-tag {
-  display: inline-block;
-  background: var(--primary);
-  color: var(--white);
-  font-size: 0.72rem;
-  font-weight: 500;
-  padding: 4px 13px;
-  border-radius: 50px;
-  margin-bottom: 14px;
-  letter-spacing: 0.03em;
-}
-
-.endo-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 4px;
-}
-
-.endo-sub {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 18px;
-  font-style: italic;
-}
-
-.endo-desc {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.82);
+.fever-desc {
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.85);
   line-height: 1.9;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
-.endo-list {
-  list-style: none;
-}
-.endo-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.8);
-  padding: 7px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.endo-list li:last-child { border-bottom: none; }
-.endo-list li::before {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: var(--primary) url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4l3 3 5-6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/10px no-repeat;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-/* Endoscopy flow */
-.endo-flow {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: var(--radius-lg);
-  padding: 36px;
-}
-
-.flow-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
-  margin-bottom: 28px;
-}
-
-.flow-steps {
+.fever-notice {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 14px;
+  background: rgba(244,162,97,0.1);
+  border: 1px solid rgba(244,162,97,0.3);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
 }
 
-.flow-step { text-align: center; min-width: 90px; }
+.fever-notice-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
-.flow-num {
-  width: 42px;
-  height: 42px;
-  background: var(--primary);
-  color: var(--white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
+.fever-notice-title {
   font-size: 0.95rem;
-  margin: 0 auto 10px;
+  font-weight: 700;
+  color: #F4A261;
+  margin-bottom: 6px;
 }
 
-.flow-label {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.5;
+.fever-notice-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.8;
+}
+.fever-notice-text strong {
+  color: #F4A261;
 }
 
-.flow-arrow {
-  color: rgba(255,255,255,0.35);
-  font-size: 1.2rem;
-  margin-top: 10px;
-  padding: 0 2px;
-  align-self: flex-start;
-  padding-top: 12px;
+.fever-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background: var(--primary);
+  padding: 14px 32px;
+  border-radius: 50px;
+  transition: background 0.2s, transform 0.15s;
+}
+.fever-tel:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 /* ===========================
@@ -903,12 +845,10 @@ img { max-width: 100%; display: block; }
   .hero-visual { display: none; }
   .hero-btns { justify-content: center; }
   .features-grid { grid-template-columns: 1fr; gap: 16px; }
-  .endo-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .doctors-grid { grid-template-columns: 1fr; }
   .access-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .flow-steps { gap: 6px; }
   .info-cards { grid-template-columns: 1fr; gap: 16px; }
 }
 
@@ -917,10 +857,8 @@ img { max-width: 100%; display: block; }
   .section-light, .section-bg, .section-dark { padding: 64px 0; }
   .contact-banner { padding: 56px 0; }
   .services-grid { grid-template-columns: 1fr; }
-  .flow-arrow { display: none; }
-  .flow-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .endo-card { padding: 26px 22px; }
-  .endo-flow { padding: 26px 22px; }
+  .fever-card { padding: 26px 22px; }
+  .fever-notice { flex-direction: column; }
   .doctor-header { padding: 22px 22px; }
   .doctor-body { padding: 20px 22px; }
 }
