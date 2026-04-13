@@ -424,6 +424,9 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
+.services-grid--4 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .service-item {
   display: flex;
