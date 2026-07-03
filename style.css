@@ -708,7 +708,6 @@ img { max-width: 100%; display: block; }
 
 .hours-table td.ok  { color: var(--primary);    font-weight: 700; font-size: 1rem; }
 .hours-table td.ng  { color: var(--text-gray);  font-size: 1rem; }
-.hours-table td.visit { color: var(--accent-dark); font-weight: 700; font-size: 0.68rem; line-height: 1.4; }
 .hours-table tr:nth-child(even) td { background: var(--bg); }
 
 .hours-note {
