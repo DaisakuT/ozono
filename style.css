@@ -1225,6 +1225,63 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   Family doctor / notices
+   =========================== */
+.notice-card {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 30px 36px;
+}
+
+.notice-card:last-child { margin-bottom: 0; }
+
+.notice-subtitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 14px;
+  padding-left: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.notice-list {
+  list-style: none;
+}
+
+.notice-list li {
+  position: relative;
+  padding: 8px 0 8px 30px;
+  font-size: 0.93rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.notice-list li:last-child { border-bottom: none; }
+
+.notice-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 15px;
+  width: 14px;
+  height: 14px;
+  border: 2.5px solid var(--primary);
+  border-radius: 50%;
+}
+
+.notice-ol {
+  padding-left: 22px;
+}
+
+.notice-ol li {
+  padding: 6px 0;
+  font-size: 0.93rem;
+}
+
+/* ===========================
    FAQ
    =========================== */
 .faq-list {
