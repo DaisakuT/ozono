@@ -997,9 +997,378 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   News
+   =========================== */
+.news-section {
+  padding: 28px 0;
+  background: var(--primary-bg);
+}
+
+.news-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 26px;
+}
+
+.news-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item {
+  display: flex;
+  gap: 16px;
+  padding: 9px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.news-date {
+  color: var(--text-gray);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+/* ===========================
+   Fever steps
+   =========================== */
+.fever-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 26px 0;
+}
+
+.fever-step {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  text-align: center;
+}
+
+.fever-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.fever-step-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.fever-step-text {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.83rem;
+  line-height: 1.7;
+}
+
+/* ===========================
+   Vaccine / checkup notice
+   =========================== */
+.vaccine-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 36px;
+  background: var(--primary-bg);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+
+.vaccine-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.vaccine-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.vaccine-text {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* ===========================
+   Endoscopy flow & cost
+   =========================== */
+.endo-flow {
+  margin-top: 44px;
+}
+
+.endo-flow-title,
+.endo-cost-title {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.endo-flow-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.endo-flow-step {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  text-align: center;
+}
+
+.endo-flow-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.endo-flow-name {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.93rem;
+  margin-bottom: 6px;
+}
+
+.endo-flow-text {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.endo-cost {
+  margin-top: 44px;
+}
+
+.endo-cost-table {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.endo-cost-table th,
+.endo-cost-table td {
+  padding: 13px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  font-size: 0.9rem;
+}
+
+.endo-cost-table tr:last-child th,
+.endo-cost-table tr:last-child td {
+  border-bottom: none;
+}
+
+.endo-cost-table th {
+  text-align: left;
+  color: var(--white);
+  font-weight: 500;
+  width: 60%;
+}
+
+.endo-cost-table td {
+  color: #7DD3FC;
+  font-weight: 700;
+  text-align: right;
+}
+
+.endo-cost-note {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.82rem;
+  margin-top: 14px;
+}
+
+/* ===========================
+   FAQ
+   =========================== */
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.faq-q {
+  position: relative;
+  padding: 18px 48px 18px 52px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--dark);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-q::-webkit-details-marker { display: none; }
+
+.faq-q::before {
+  content: "Q";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-q::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.faq-item[open] .faq-q::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
+
+.faq-a {
+  position: relative;
+  padding: 0 20px 18px 52px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.faq-a::before {
+  content: "A";
+  position: absolute;
+  left: 18px;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   Privacy policy page
+   =========================== */
+.privacy-section {
+  padding-top: 64px;
+}
+
+.privacy-container {
+  max-width: 800px;
+}
+
+.privacy-body {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 40px 44px;
+  font-size: 0.93rem;
+}
+
+.privacy-body h2 {
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  margin: 28px 0 10px;
+  padding-left: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.privacy-body ul {
+  padding-left: 22px;
+  margin: 8px 0;
+}
+
+.privacy-body li {
+  margin-bottom: 4px;
+}
+
+.privacy-clinic-info {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--text-gray);
+}
+
+.privacy-back {
+  text-align: center;
+  margin-top: 36px;
+}
+
+/* ===========================
    Responsive
    =========================== */
 @media (max-width: 960px) {
+  .fever-steps { grid-template-columns: 1fr; }
+  .endo-flow-steps { grid-template-columns: 1fr 1fr; }
   .nav { display: none; }
   .menu-btn { display: flex; }
   .hero-content { grid-template-columns: 1fr; text-align: center; }
@@ -1025,4 +1394,11 @@ img { max-width: 100%; display: block; }
   .recruit-card { flex-direction: column; padding: 24px 20px; }
   .doctor-header { padding: 22px 22px; }
   .doctor-body { padding: 20px 22px; }
+  .news-item { flex-direction: column; gap: 2px; }
+  .endo-flow-steps { grid-template-columns: 1fr; }
+  .vaccine-card { flex-direction: column; padding: 22px 20px; }
+  .endo-cost-table th, .endo-cost-table td { padding: 11px 14px; font-size: 0.85rem; }
+  .endo-cost-table th { width: auto; }
+  .endo-cost-table td { white-space: nowrap; }
+  .privacy-body { padding: 28px 22px; }
 }
